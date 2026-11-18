@@ -25,8 +25,8 @@ data "aws_iam_policy_document" "github_trust" {
       test     = "StringLike"
       variable = "token.actions.githubusercontent.com:sub"
       values = [
-        "repo:${var.github_repo}:pull_request",
-        "repo:${var.github_repo}:ref:refs/heads/main",
+        "repo:Ninad262002@139260066/terraform-state-lab2@1461797405:pull_request",
+        "repo:Ninad262002@139260066/terraform-state-lab2@1461797405:ref:refs/heads/main",
       ]
     }
   }
